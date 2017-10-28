@@ -1,0 +1,25 @@
+<meta>
+	<info name="Houses" author="rootcause" type="script" />
+	
+	<!-- Files -->
+	<script src="HouseScript.dll" type="server" lang="compiled" />
+	<script src="House.js" type="client" lang="javascript" />
+	<script src="FurnitureEditor.js" type="client" lang="javascript" />
+
+	<!-- Settings -->
+	<settings>
+		<setting name="houseDirName" value="HouseData" default="HouseData" description="Directory name of the save files." />
+		<setting name="playerHouseLimit" value="3" default="3" description="Maximum amount of houses a player can own. (0 to disable)" />
+		<setting name="houseMoneyLimit" value="5000000" default="5000000" description="Maximum amount of money a house can have." />
+		<setting name="houseWeaponLimit" value="10" default="10" description="Maximum amount of weapons a house can have. (0 to disable)" />
+		<setting name="houseFurnitureLimit" value="25" default="25" description="Maximum amount of furnitures a house can have. (0 to disable)" />
+		<setting name="resetDimensionOnDeath" value="true" default="true" description="Reset a player's dimension when they die." />
+		<setting name="saveInterval" value="120" default="120" description="Seconds between two save operations." />
+	</settings>
+	
+	<!-- Resources -->
+	<include resource="MoneyAPI" />
+	
+	<!-- Libraries -->
+	<assembly ref="Newtonsoft.Json.dll" />
+</meta>
